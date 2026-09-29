@@ -1,235 +1,150 @@
-# Awesome-Behavioral-Biometrics
-
-## Top Behavioral Biometrics Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Continuous Authentication, Fraud Detection & Identity Verification*  
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Behavioral Biometrics**. These tools analyze patterns in how users interact with devices — typing rhythm, mouse movement, touch gestures, and gait — to verify identity continuously and detect account takeover or fraud in real time.
-
-
-
-**Examples** include BioCatch, Featurespace, TypingDNA, Zighra, BehavioSec, NuData Security, Unbotify, ThreatMark, Plurilock, Callsign, and SecuredTouch (the category leaders).
-
-
-
-**Open-source emphasis**: This section is expanded with active projects for self-hosting, custom behavioral modeling, and transparent biometric research — ideal for developers, researchers, and security engineers building vendor-independent continuous authentication systems. The open-source ecosystem provides strong foundations in keystroke dynamics, mouse trajectory analysis, and multi-modal data collection, though production-grade deployment requires significant tuning and domain expertise.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[BioCatch](https://www.biocatch.com/)**  
-
-  Behavioral biometrics platform analyzing 2,500+ cognitive and physical interaction signals for fraud detection, continuous authentication, and scam prevention across digital banking and e-commerce.
-
-
-
-- **[Featurespace](https://www.featurespace.com/)**  
-
-  Adaptive behavioral analytics platform using machine learning for real-time fraud and financial crime detection, analyzing transaction and interaction patterns.
-
-
-
-- **[TypingDNA](https://www.typingdna.com/)**  
-
-  Keystroke dynamics platform providing typing biometrics for two-factor authentication, fraud prevention, and continuous authentication. Offers JavaScript recorder and authentication APIs.
-
-
-
-- **[Zighra](https://www.zighra.com/)**  
-
-  Behavioral biometrics and continuous authentication platform using on-device AI for frictionless identity verification.
-
-
-
-- **[BehavioSec](https://www.behaviosec.com/)**  
-
-  Behavioral biometrics platform (now part of LexisNexis Risk Solutions) analyzing typing, mouse, and touch patterns for continuous authentication and fraud detection.
-
-
-
-- **[NuData Security](https://www.nudata.com/)**  
-
-  Behavioral analytics platform (Mastercard company) using passive biometrics for fraud prevention and account takeover detection.
-
-
-
-- **[Unbotify](https://www.unbotify.com/)**  
-
-  Behavioral biometrics solution (now part of Datadome) using human interaction patterns to distinguish humans from bots and malicious automation.
-
-
-
-- **[ThreatMark](https://threatmark.com/)**  
-
-  Fraud detection and behavioral biometrics platform for digital banking, analyzing user behavior for account takeover and transaction anomaly detection.
-
-
-
-- **[Plurilock](https://www.plurilock.com/)**  
-
-  Behavioral biometrics platform providing continuous authentication for workstations and applications through typing and mouse dynamics.
-
-
-
-- **[Callsign](https://www.callsign.com/)**  
-
-  Identity and behavioral intelligence platform using behavioral biometrics and deep learning for authentication and fraud prevention.
-
-
-
-- **[SecuredTouch](https://www.securedtouch.com/)**  
-
-  Behavioral biometrics platform (now part of Ping Identity) providing continuous authentication for mobile and web applications.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Neuro-Mimesis](https://github.com/sadvik-asus/Neuro_Mimesis)**  
-
-  Next-generation security framework implementing Cognitive Identity Verification through mouse movement dynamics. Features continuous authentication, real-time Trust Score calculation, and an **Active Defense Protocol** that triggers on breach detection: webcam evidence capture, IP geolocation, emergency alerts, cursor jitter, and workstation lockdown. React + Flask + SQLite stack with OpenCV and PyAutoGUI for OS-level control. The system measures mouse entropy — AI bots move in straight lines, humans exhibit "jitter" and micro-corrections .
-
-
-
-- **[Behavior-Based-Authentication (VanGuard2025)](https://github.com/VanGuard2025/Behavior-Based-Authentication)**  
-
-  Real-time ML-powered authentication system continuously verifying users via keystroke dynamics and mouse behavior. Features adaptive anomaly detection, drift monitoring, and a modern web interface. Uses GRU sequence models and Autoencoders for behavioral modeling, with configurable thresholds for confidence and anomaly scores. Flask backend with WebSocket streaming and Chart.js visualizations for real-time behavioral analytics .
-
-
-
-- **[Behavioral Biometrics Tracker (aaryanyaadav)](https://github.com/aaryanyaadav/Behavioral-Biometrics)**  
-
-  Django-based mobile web application collecting touch pressure, swipe dynamics, device tilt, and keystroke patterns for continuous authentication. Features dual-storage system (local CSV + Firebase Realtime Database), 12-Factor App methodology, and admin export endpoints in CSV, JSON, and XLSX. Captures Characters Per Minute, error rates, dwell times, and flight times specifically for mobile interaction .
-
-
-
-- **[Open-Behavioral-Auth (OBA)](https://github.com/topics/behavioral-biometrics)**  
-
-  Privacy-first, open-source engine for passive MFA. Captures user "rhythms" — keystroke dynamics and pointer velocity — via a lightweight JavaScript SDK. Features adaptive threshold matching to handle behavioral drift across devices. Enables self-hosted Risk-Based Authentication (RBA) framework to detect anomalies without user friction .
-
-
-
-- **[KeyStroke-Dynamics (Xenia101)](https://github.com/Xenia101/KeyStroke-Dynamics)**  
-
-  Web-based user verification system using keystroke dynamics with k-NN classification. Achieved **96.8% average accuracy** across 5-fold cross-validation (97.6%, 92.2%, 97.1%, 100%, 97.1%). Uses Euclidean distance for feature comparison and Simhash with Hamming distance for large-scale deployment optimization. Python Flask + k-NN based .
-
-
-
-- **[BEACON-Logger](https://zenodo.org/records/20062628)**  
-
-  Python-based multimodal data acquisition tool for behavioral biometrics research in gaming environments. Synchronizes five data streams: keystroke dynamics (press/release, durations, inter-key latencies), mouse kinematics (X/Y, velocity, acceleration, click timing), network traffic (PCAP via Scapy/Npcap), hardware metadata (MAC, monitor aspect ratios, HID inventory), and game-specific configuration. Includes integrated screen recording for visual ground truth. Designed for continuous authentication and Zero Trust Architecture research .
-
-
-
-- **[TypingDnaRecorder-JavaScript](https://github.com/TypingDNA/TypingDnaRecorder-JavaScript)**  
-
-  JavaScript class for recording typing biometrics information and typing patterns in the browser. Official recorder from TypingDNA, enabling keystroke dynamics collection for authentication and fraud detection applications .
-
-
-
-- **[SSPRA (State-Space Perturbation-Resistant Approach)](https://github.com/DrFrankSChen/SSPRA-State-Space-Perturbation-Resistant-Approach)**  
-
-  Research code for a modality-agnostic continuous authentication framework using state-space temporal modeling and multimodal sensor fusion. Published in IEEE Transactions on Biometrics, Behavior, and Identity Science (2024). Fuses authentication evidence from all available modalities, maintaining monitoring when some modalities are temporarily absent. Updates probabilities of Safe, Suspense, and Attacked states. Includes runnable BB-MAS gait demo using accelerometer/gyroscope streams .
-
-
-
-- **[PyWIB](https://personales.upv.es/thinkmind/IARIA_CONGRESS/IARIA_Congress_2026/iaria_congress_2026_1_170_50103.html)**  
-
-  Python library for multi-modal web interaction behavior analysis. Unifies mouse-tracking and keystroke dynamics into a single processing pipeline. Designed for Human-Computer Interaction research, providing methods to process event logs and compute behavioral metrics. Open-source and available on GitHub .
-
-
-
-- **[generative-mouse-trajectories](https://github.com/jrcalgo/generative-mouse-trajectories)**  
-
-  GAN-based imitation learning of user mouse movements. Captures high-fidelity trajectory data (temporal, spatial, kinematic, and behavioral metrics) and trains Generative Adversarial Networks to simulate authentic human-like cursor movements. Applicable to behavioral biometrics, automated UI testing, and accessibility tools. Includes Rust-based collection environment and CSV export .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Maze-trace CAPTCHA with behavioral biometrics** — CAPTCHA system with behavioral biometrics that is invisible to humans but impenetrable to agents. Updated 2026 .
-
-- **Behavioral signature authentication for UPI** — Replaces PIN with handwritten signature using on-device biometrics. Working prototype with Python backend .
-
-- **SecureAuth Enterprise** — Behavioral biometric authentication platform analyzing keystroke dynamics, mouse behavior, facial recognition, and WebAuthn for continuous verification .
-
-- **Who Is Alyx? dataset** — Behavioral biometric dataset for user identification in XR. 71 users playing Half-Life: Alyx across two sessions with motion, eye-tracking, and physiological data. Best model achieves 95% mean accuracy within 2 minutes .
-
-- **Wink Wink EEG dataset** — Multi-session EEG dataset for biometric authentication based on voluntary eye-movement patterns (winks and blinks). 18 participants, 8-channel EEG at 250 Hz .
-
-
-
-**Frameworks for building custom behavioral biometrics solutions**: Combine **Neuro-Mimesis** for mouse entropy-based continuous authentication with active defense, **Behavior-Based-Authentication** for ML-powered keystroke + mouse verification with drift monitoring, and **Open-Behavioral-Auth** for privacy-first passive MFA with adaptive thresholds. For mobile-specific behavioral biometrics, **Behavioral Biometrics Tracker** provides touch pressure and device tilt capture. For research-grade multimodal data collection, **BEACON-Logger** offers synchronized keystroke, mouse, network, and hardware streams. Note that production-grade behavioral biometrics requires large-scale user datasets for model training, careful handling of behavioral drift, and rigorous privacy compliance — the open-source ecosystem provides strong algorithmic foundations and research frameworks, but enterprise-scale deployment remains primarily commercial.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Behavioral biometrics tools collect sensitive interaction data and must comply with data privacy regulations (GDPR, CCPA, BIPA in Illinois, etc.). Biometric data handling requires explicit consent and secure storage.
-
-- Self-hosted open-source solutions require proper infrastructure, model training data, and ongoing tuning. Behavioral models are sensitive to device changes, context shifts, and user fatigue — continuous validation is essential.
-
-- The open-source ecosystem provides strong algorithmic foundations and research frameworks, but enterprise-grade behavioral biometrics with global scale, real-time risk scoring, and regulatory compliance remains primarily a commercial offering.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Behavioral Biometrics Banner" width="100%" />
+</p>
+
+# 🧠 Awesome Behavioral Biometrics 🛡️
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Behavioral-Biometrics"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Behavioral-Biometrics?style=flat-square&logo=github" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Behavioral-Biometrics/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Behavioral-Biometrics?style=flat-square&logo=github" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Behavioral-Biometrics/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Behavioral-Biometrics?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 🚀 Overview & Ecosystem
 
+Welcome to the **Awesome Behavioral Biometrics** repository — the definitive curated index of enterprise **SaaS platforms**, **security solutions**, and **open-source frameworks** for **Behavioral Biometrics**, **Continuous Authentication**, **Keystroke Dynamics**, and **Passive Multi-Factor Authentication (MFA)**.
 
-**Made for security engineers, fraud prevention teams, identity architects, and behavioral researchers.**  
+Behavioral biometrics analyze human interaction patterns — typing cadence, mouse dynamics, touch pressure, device micro-movements, and gait — to establish continuous user identity without introducing friction. These technologies power modern **Zero Trust security architectures**, real-time **account takeover (ATO) prevention**, and AI-driven **fraud detection** across banking, e-commerce, and enterprise applications.
 
-Let's make behavioral biometrics more open, transparent, and privacy-respecting.
+---
+
+## 📋 Table of Contents 📌
+
+- [📊 Market Insights & Landscape](#-market-insights--landscape)
+- [🏢 SaaS & Hosted Enterprise Platforms](#-saas--hosted-enterprise-platforms)
+- [🔓 Open-Source GitHub Repositories](#-open-source-github-repositories)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💬 Support & Community](#-support--community)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+
+---
+
+## 📊 Market Insights & Landscape 📈
+
+> **Market Size Estimate**: The global behavioral biometrics market is valued at approximately **$2.1 Billion** and is projected to reach **$9.2 Billion by 2030** (growing at a CAGR of ~23.5%).  
+> **Market Structure**: The sector is **highly concentrated** and dominated by major global payments networks and cybersecurity conglomerates. Significant consolidation has occurred through major M&A transactions, including Visa's acquisition of **BioCatch** ($2.4B, 2026) and **Featurespace** (~$925M, 2024), Mastercard's acquisition of **NuData Security**, and LexisNexis' acquisition of **BehavioSec**.
+
+---
+
+## 🏢 SaaS & Hosted Enterprise Platforms 💼
+
+The commercial behavioral biometrics market is ranked below by company valuation and enterprise market capitalization:
+
+| Company / Product 🏢 | Market Size / Valuation 💰 | Starting Pricing 💵 | Free Tier / Trial Limit ⏱️ | Core Focus & Features 🎯 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[BioCatch](https://www.biocatch.com/)** | **$2,400,000,000** *(Acquired by Visa in 2026)* | $2,500 / month (Tiered by API session volume) | 30-Day Enterprise PoC Trial (Up to 50k test sessions) | Analyzes 2,500+ cognitive & physical interaction signals for banking fraud prevention and ATO detection. |
+| **[Featurespace](https://www.featurespace.com/)** | **$925,000,000** *(Acquired by Visa in 2024)* | $3,000 / month (Custom enterprise volume tiers) | 30-Day Sandbox PoC (Limited event rate testing) | Adaptive Adaptive Behavioral Analytics using ARIC risk hub for real-time transaction & interaction fraud prevention. |
+| **[Callsign](https://www.callsign.com/)** | **$500,000,000** *(Private enterprise valuation)* | $1,500 / month (Per active authenticated user volume) | 14-Day Enterprise PoC Demo (Up to 10k authentication events) | Deep learning identity intelligence platform combining behavioral biometrics and threat context. |
+| **[NuData Security](https://www.nudata.com/)** | **$450,000,000** *(Acquired by Mastercard)* | $2,000 / month (Based on web/mobile monthly active users) | 30-Day Proof of Concept (Restricted sandbox deployment) | Passive biometric analytics (NuDetect) protecting digital touchpoints against botnets and account takeover. |
+| **[BehavioSec](https://www.behaviosec.com/)** | **$200,000,000** *(Acquired by LexisNexis Risk Solutions)* | $1,200 / month (Scaled per 100k user profiles) | 30-Day Trial License (Self-hosted developer environment) | Continuous user verification through typing, mouse dynamics, and touchscreen gesture profiling. |
+| **[SecuredTouch](https://www.securedtouch.com/)** | **$150,000,000** *(Acquired by Ping Identity)* | $1,000 / month (Ping Identity suite add-on pricing) | 30-Day PingIdentity Partner Trial (Up to 5k test users) | Mobile & web continuous authentication focusing on gesture recognition and anomaly detection. |
+| **[ThreatMark](https://threatmark.com/)** | **$80,000,000** *(Est. $15M ARR valuation)* | $800 / month (Per digital banking endpoint tier) | 30-Day Guided Trial (Full feature sandbox access) | Threat detection and behavioral intelligence platform tailored for digital banking fraud prevention. |
+| **[Plurilock](https://www.plurilock.com/)** | **$35,000,000** *(Publicly traded TSXV: PLUR, ~$34M revenue)* | $9.00 / user / month (Plurilock DEFEND workstation tier) | 14-Day Workstation Evaluation (Up to 25 endpoint licenses) | Zero Trust continuous workstation authentication via background mouse dynamics and keystroke verification. |
+| **[TypingDNA](https://www.typingdna.com/)** | **$25,000,000** *(Series A led by Google Gradient Ventures)* | $0.001 / authentication call ($49/mo minimum) | **Free Forever Tier**: 100 active users / month free | Keystroke dynamics API & JavaScript recorder for 2FA, continuous authentication, and typing verification. |
+| **[Zighra](https://www.zighra.com/)** | **$10,000,000** *(Early stage venture backed)* | $500 / month (Device SDK tier) | 30-Day Developer Trial (1,000 active device SDK tokens) | On-device AI engine for frictionless, privacy-first continuous authentication on mobile devices. |
+
+---
+
+## 🔓 Open-Source GitHub Repositories 💻
+
+Explore leading open-source projects for self-hosting, continuous authentication research, keystroke analysis, and dataset generation, sorted by GitHub star count:
+
+* **[TypingDnaRecorder-JavaScript](https://github.com/TypingDNA/TypingDnaRecorder-JavaScript)** [<img src="https://img.shields.io/github/stars/TypingDNA/TypingDnaRecorder-JavaScript?style=social&color=white" alt="Stars"/>](https://github.com/TypingDNA/TypingDnaRecorder-JavaScript/stargazers)  
+  Official JavaScript recorder class from TypingDNA for capturing typing biometrics, inter-key delays, and pattern features directly inside web browsers.
+
+* **[Neuro-Mimesis](https://github.com/sadvik-asus/Neuro_Mimesis)** [<img src="https://img.shields.io/github/stars/sadvik-asus/Neuro_Mimesis?style=social&color=white" alt="Stars"/>](https://github.com/sadvik-asus/Neuro_Mimesis/stargazers)  
+  Cognitive identity verification framework evaluating mouse movement dynamics. Features real-time Trust Score computation and an **Active Defense Protocol** (webcam evidence capture, cursor jitter, and workstation lockdown). Stack: React, Flask, OpenCV, PyAutoGUI.
+
+* **[Bot-Detection](https://github.com/Mouse-BB-Team/Bot-Detection)** [<img src="https://img.shields.io/github/stars/Mouse-BB-Team/Bot-Detection?style=social&color=white" alt="Stars"/>](https://github.com/Mouse-BB-Team/Bot-Detection/stargazers)  
+  Web application protection module implementing behavioral biometrics and mouse tracking algorithms to distinguish human users from automated attack scripts.
+
+* **[Behavior-Based-Authentication](https://github.com/VanGuard2025/Behavior-Based-Authentication)** [<img src="https://img.shields.io/github/stars/VanGuard2025/Behavior-Based-Authentication?style=social&color=white" alt="Stars"/>](https://github.com/VanGuard2025/Behavior-Based-Authentication/stargazers)  
+  Real-time ML authentication system continuously verifying users via keystroke dynamics and mouse kinematics. Utilizes GRU sequence models and Autoencoders with drift monitoring and Chart.js streaming.
+
+* **[keystroke-dynamics-datagen](https://github.com/nileshprasad137/keystroke-dynamics-datagen)** [<img src="https://img.shields.io/github/stars/nileshprasad137/keystroke-dynamics-datagen?style=social&color=white" alt="Stars"/>](https://github.com/nileshprasad137/keystroke-dynamics-datagen/stargazers)  
+  Data extraction and generation framework capturing key dwell times, flight times, and typing rhythm metrics to construct benchmark datasets for machine learning research.
+
+* **[KeyStroke-Dynamics](https://github.com/Xenia101/KeyStroke-Dynamics)** [<img src="https://img.shields.io/github/stars/Xenia101/KeyStroke-Dynamics?style=social&color=white" alt="Stars"/>](https://github.com/Xenia101/KeyStroke-Dynamics/stargazers)  
+  Flask-based keystroke verification engine using k-Nearest Neighbors (k-NN) classification and Simhash/Euclidean distance matching, demonstrating high classification accuracy on benchmark datasets.
+
+* **[author-attribution](https://github.com/ridvansalihkuzu/author-attribution)** [<img src="https://img.shields.io/github/stars/ridvansalihkuzu/author-attribution?style=social&color=white" alt="Stars"/>](https://github.com/ridvansalihkuzu/author-attribution/stargazers)  
+  Social media and messaging authorship attribution engine leveraging behavioral writing rhythms, stylistic patterns, and machine learning models.
+
+* **[cerno](https://github.com/PlawIO/cerno)** [<img src="https://img.shields.io/github/stars/PlawIO/cerno?style=social&color=white" alt="Stars"/>](https://github.com/PlawIO/cerno/stargazers)  
+  Next-generation maze-trace CAPTCHA integrated with real-time behavioral biometrics, rendering verification invisible to legitimate users while blocking AI agents.
+
+* **[generative-mouse-trajectories](https://github.com/jrcalgo/generative-mouse-trajectories)** [<img src="https://img.shields.io/github/stars/jrcalgo/generative-mouse-trajectories?style=social&color=white" alt="Stars"/>](https://github.com/jrcalgo/generative-mouse-trajectories/stargazers)  
+  GAN-based imitation learning engine modeling synthetic human cursor movements. Features Rust-based data collection environment for accessibility testing and biometrics evaluation.
+
+* **[Behavioral-Biometrics](https://github.com/aaryanyaadav/Behavioral-Biometrics)** [<img src="https://img.shields.io/github/stars/aaryanyaadav/Behavioral-Biometrics?style=social&color=white" alt="Stars"/>](https://github.com/aaryanyaadav/Behavioral-Biometrics/stargazers)  
+  Django mobile web application collecting touch pressure, swipe dynamics, device tilt, and keystroke metrics with dual storage (Firebase + CSV export).
+
+* **[Open-Behavioral-Auth](https://github.com/topics/behavioral-biometrics)** [<img src="https://img.shields.io/github/stars/topics/behavioral-biometrics?style=social&color=white" alt="Stars"/>](https://github.com/topics/behavioral-biometrics/stargazers)  
+  Privacy-first passive MFA SDK collecting user keystroke rhythms and pointer velocities for risk-based authentication (RBA).
+
+* **[BEACON-Logger](https://zenodo.org/records/20062628)** [<img src="https://img.shields.io/badge/Zenodo-DOI-blue?style=social" alt="DOI"/>](https://zenodo.org/records/20062628)  
+  Multimodal research logger synchronizing 5 data streams: keystrokes, mouse kinematics, PCAP network traffic, hardware IDs, and video ground truth.
+
+* **[SSPRA-State-Space-Perturbation-Resistant-Approach](https://github.com/DrFrankSChen/SSPRA-State-Space-Perturbation-Resistant-Approach)** [<img src="https://img.shields.io/github/stars/DrFrankSChen/SSPRA-State-Space-Perturbation-Resistant-Approach?style=social&color=white" alt="Stars"/>](https://github.com/DrFrankSChen/SSPRA-State-Space-Perturbation-Resistant-Approach/stargazers)  
+  IEEE T-BIOM continuous authentication state-space temporal modeling framework with sensor fusion across gait and touch biometrics.
+
+* **[BehaveFormer](https://github.com/nganntk/BehaveFormer)** [<img src="https://img.shields.io/github/stars/nganntk/BehaveFormer?style=social&color=white" alt="Stars"/>](https://github.com/nganntk/BehaveFormer/stargazers)  
+  Transformer-based continuous authentication architecture fusing keystroke dynamics and IMU motion sensor data across standard benchmark datasets (Aalto, HMOG, HuMIdb).
+
+---
+
+## 🤝 How to Contribute 💡
+
+Contributions are welcome! Help us keep this security resource accurate and up-to-date.
+
+1. 🍴 **Fork** this repository.
+2. 📝 **Add/Edit** entries in `README.md` maintaining table/list structure.
+3. 🔗 Include project name, homepage link, star count/pricing details, and factual description.
+4. 🚀 Submit a **Pull Request** with a brief summary of additions.
+
+See the main [Awesome List Community Guidelines](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for quality standards.
+
+---
+
+## 💬 Support & Community 💖
+
+Thank you for exploring and utilizing the **Awesome Behavioral Biometrics** repository! If this project helps your security research, fraud prevention strategy, or application development, please consider showing your support:
+
+* ⭐ **Star this repository** to improve visibility for the cybersecurity community.
+* 🔀 **Fork & Share** with fellow security engineers, identity architects, and researchers.
+* ☕ **Sponsor the Maintainer**: Support ongoing curation and open-source contributions via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History 📊
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Behavioral-Biometrics&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Behavioral-Biometrics&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer 📜
+
+- This is a **community-curated index** for informational, research, and evaluation purposes only.
+- Behavioral biometrics technologies capture sensitive behavioral interaction telemetry and must strictly adhere to global privacy frameworks including **GDPR**, **CCPA**, and biometric privacy mandates such as **Illinois BIPA**.
+- Self-hosted open-source security models require comprehensive data collection, tuning, and ongoing validation against behavioral drift and context shifts.
+
+---
+
+<p align="center">
+  <b>Built with ❤️ for Security Engineers, Fraud Analysts, Identity Architects & Behavioral Researchers worldwide.</b>
+</p>
