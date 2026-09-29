@@ -62,7 +62,7 @@ The commercial behavioral biometrics market is ranked below by company valuation
 
 ## 🔓 Open-Source GitHub Repositories 💻
 
-Explore leading open-source projects for self-hosting, continuous authentication research, keystroke analysis, and dataset generation, sorted by GitHub star count:
+Explore leading open-source projects for self-hosting, continuous authentication research, keystroke analysis, and dataset generation, sorted by GitHub Stars_Count:
 
 * **[TypingDnaRecorder-JavaScript](https://github.com/TypingDNA/TypingDnaRecorder-JavaScript)** [<img src="https://img.shields.io/github/stars/TypingDNA/TypingDnaRecorder-JavaScript?style=social&color=white" alt="Stars"/>](https://github.com/TypingDNA/TypingDnaRecorder-JavaScript/stargazers)  
   Official JavaScript recorder class from TypingDNA for capturing typing biometrics, inter-key delays, and pattern features directly inside web browsers.
@@ -114,7 +114,7 @@ Contributions are welcome! Help us keep this security resource accurate and up-t
 
 1. 🍴 **Fork** this repository.
 2. 📝 **Add/Edit** entries in `README.md` maintaining table/list structure.
-3. 🔗 Include project name, homepage link, star count/pricing details, and factual description.
+3. 🔗 Include project name, homepage link, Stars_Count/pricing details, and factual description.
 4. 🚀 Submit a **Pull Request** with a brief summary of additions.
 
 See the main [Awesome List Community Guidelines](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for quality standards.
